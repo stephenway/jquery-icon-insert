@@ -9,22 +9,28 @@ Download and include [Ligature Symbols](http://kudakurage.com/ligature_symbols/)
 
 Include the script
 
-	<script src="jquery.service.js"></script>
+``` html
+<script src="jquery.service.js"></script>
+```
 
 Place a tag for adding service icons in your layout
 	
-	<div class="social"></div>
+``` html	
+<div class="social"></div>
+```
 
 
 ## Usage
 
-	$(function() {
+``` js
+$(function() {
 
-	$("div.social").service("facebook", "stephenway")
-			   	   .service("linkedin", "stephenway", "personal")
-			  	   .service("twitter", "stephencway");
+$("div.social").service("facebook", "stephenway")
+		   	   .service("linkedin", "stephenway", "personal")
+		  	   .service("twitter", "stephencway");
 
-	});
+});
+```
 
 ## Support
 
