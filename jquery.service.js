@@ -1,5 +1,5 @@
 /**
- * jQuery Service Plugin 1.0
+ * jQuery Service Plugin 1.1
  *
  * http://github.com/stephenway/jquery-service/
  *
@@ -11,33 +11,37 @@
 
 (function($) {
 	$.fn.service = function(service, user, type) {
-  
-		if (service == "linkedin")
-			var href = "http://" + service + ".com/company/" + user;
-		else if (service == "linkedin" && type == "personal")
-			var href = "http://" + service + ".com/in/" + user;
-		else if (service == "tumblr")
-			var href= "http://" + user + "." + service + ".com/";
-		else if (service == "yelp")
-			var href= "http://" + service + ".com/biz/" + user;
-		else if (service == "blogger")
-			var href= "http://" + user + ".blogspot.com/";
-		else if (service == "wordpress")
-			var href= "http://" + user + "." + service + ".com/";
-		else if (service == "ustream")
-			var href= "http://" + service + ".tv/" + user;
+  		/* Extensions */
+		if (service == "facebook" && type == "page")
+			var extension= ".com/pages/";
+		else if (service == "linkedin" || service == "linkedin" && type == "company")
+			var extension = ".com/company/";
+		else if (service == "linkedin" && type == "personal" || service == "linkedin" && type == "in")
+			var extension = ".com/in/";
 		else if (service == "picasa")
-			var href= "http://" + service + "web.google.com/" + user;
-		else if (service == "facebook" && type == "page")
-			var href= "http://" + service + ".com/pages/" + user;
+			var extension = "web.google.com/";
+		else if (service == "ustream")
+			var extension = ".tv/";
+		else if (service == "yelp")
+			var extension = ".com/biz/";
 		else
-			var href = "http://" + service + ".com/" + user;
+			var extension= ".com/";
+
+		/* Subdomains */
+		if (service == "blogger")
+			var href = "http://" + user + ".blogspot" + extension;
+		else if (service == "tumblr" || service == "wordpress" || service == "github" && type == "page")
+			var href = "http://" + user + "." + service + extension;
+		else
+			var href = "http://" + service + extension + user;
+
+		/* DOM Injection */
 		if (service == "yelp")
 			var object = $("<a class='lsf-icon' title='star' href=" + href + "></a>");
 		else
 			var object = $("<a class='lsf-icon' title=" + service + " href=" + href + "></a>");
-		object.appendTo(this);
 
+		object.appendTo(this);
 		return this;
 
 	};
