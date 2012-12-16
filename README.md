@@ -7,6 +7,10 @@ jQuery DOM Injection for [Ligature Symbols](http://kudakurage.com/ligature_symbo
 
 Download and include [Ligature Symbols](http://kudakurage.com/ligature_symbols/) in your project's stylesheet.
 
+``` bash
+bower install jqueryservice
+```
+
 Include the script
 
 ``` html
