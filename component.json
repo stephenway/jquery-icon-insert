@@ -1,0 +1,8 @@
+{
+  "name": "jquery.service",
+  "version": "1.1",
+  "main": ["./jquery.service.js", "./jquery.service.min.js"],
+  "dependencies": {
+    "jquery": "~1.8.3"
+  }
+}
