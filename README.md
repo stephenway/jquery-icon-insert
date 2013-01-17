@@ -1,4 +1,4 @@
-jQuery Service Icon Injection
+jQuery Icon Insert
 =============================
 
 jQuery DOM Injection for [Ligature Symbols](http://kudakurage.com/ligature_symbols/)
