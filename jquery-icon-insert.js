@@ -1,9 +1,9 @@
 /**
- * jQuery Service Plugin 1.1
+ * jQuery Icon Insert Plugin 1.2
  *
- * http://github.com/stephenway/jquery-service/
+ * http://github.com/stephenway/jquery-icon-insert/
  *
- * Copyright (c) 2012 Stephen Way
+ * Copyright (c) 2013 Stephen Way
  *
  * Licensed under the MIT license:
  *   http://www.opensource.org/licenses/mit-license.php
@@ -11,7 +11,7 @@
 
 (function($) {
 	$.fn.service = function(service, user, type) {
-  		/* Extensions */
+		/* Extensions */
 		if (service == "facebook" && type == "page")
 			var extension= ".com/pages/";
 		else if (service == "linkedin" || service == "linkedin" && type == "company")

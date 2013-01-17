@@ -1,8 +1,8 @@
 {
   "name": "jquery-icon-insert",
-  "version": "1.1",
+  "version": "1.2",
   "main": ["./jquery-icon-insert.js", "./jquery-icon-insert.min.js"],
   "dependencies": {
-    "jquery": "~1.8.3"
+    "jquery": "~1.7.2"
   }
 }
