@@ -1,0 +1,29 @@
+{
+  "name": "icon-insert",
+  "title": "jQuery Icon Insert",
+  "description": "jQuery plugin for icon font DOM injection.",
+  "keywords": [
+    "icon",
+    "font",
+    "dom"
+  ],
+  "version": "1.2",
+  "author": {
+    "name": "Stephen Way",
+    "email": "stephencway@me.com",
+    "url": "https://github.com/stephenway"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/stephenway/jquery-icon-insert/blob/master/LICENSE.md"
+    }
+  ],
+  "bugs": "https://github.com/stephenway/jquery-icon-insert/issues",
+  "homepage": "https://github.com/stephenway/jquery-icon-insert",
+  "docs": "https://github.com/stephenway/jquery-icon-insert",
+  "download": "https://github.com/stephenway/jquery-icon-insert/archive/1.2.zip",
+  "dependencies": {
+    "jquery": ">=1.7.2"
+  }
+}
